@@ -6,9 +6,12 @@ const lowercaseCheckbox = document.getElementById('lowercase');
 const numberCheckbox = document.getElementById('number');
 const symbolCheckbox = document.getElementById('symbol');
 const generatePasswordEl = document.getElementById('generatePassword')
+const length = +lengthEl.value
+
 
 generatePasswordEl.addEventListener('click', () => {
-    const length = +lengthEl.value
+
+    const length = lengthEl.value
     const useUppercase = uppercaseCheckbox.checked
     const useLowercase = lowercaseCheckbox.checked
     const useNumber = numberCheckbox.checked
