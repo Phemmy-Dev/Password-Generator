@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 99vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background:#282727;
+    border-radius: 5px;
+    padding: 30px;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+
+.container .resultCont .result {
+    background: wheat;
+    display: block;
+    width: 280px;
+    height: 50px;
+    border-radius: 2px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+}
+
+.resultCont .clipboard {
+    padding: 16px 18px;
+    background: rgb(112, 25, 112);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.resultCont .clipboard:hover {
+    background: rgb(87, 20, 87);
+}
+
+.resultCont  button i {
+    color: whitesmoke;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.setting label {
+    font-size: 17px;
+    color: white;
+}
+
+.setting input {
+    width: 40px;
+    height: 25px;
+}
+
+#generatePassword {
+    margin-top: 30px;
+}
+
+#generatePassword button {
+    background: rgb(112, 25, 112);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+#generatePassword button:hover {
+    background: rgb(87, 20, 87);
+}
